@@ -2,9 +2,10 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Hello World! I am an aspiring pentester and this little blog will be where I post some ctf walkthroughs and other cybersecurity related stuff.
 
 ### More Information
 
