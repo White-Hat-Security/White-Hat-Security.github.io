@@ -1,3 +1,12 @@
+---
+published: false
+---
 ## HTB Legacy Walkthrough
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+HackTheBox
+
+Box: Legacy
+
+IP: 10.10.10.4
+
+For all of these walkthroughs I used pimpmykali on my Kali VM.
