@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-# HTB Legacy
-
 HackTheBox
 
 Box: Legacy
