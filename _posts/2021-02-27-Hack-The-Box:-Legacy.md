@@ -13,7 +13,7 @@ For all of these walkthroughs I used pimpmykali on my Kali VM.
 
 Test
 
-```javascript
+``javascript
 /* Some pointless Python */
 print(f'Hello world!')
-```
+``
