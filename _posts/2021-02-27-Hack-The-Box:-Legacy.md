@@ -9,6 +9,8 @@ IP: 10.10.10.4
 
 For all of these walkthroughs I used pimpmykali on my Kali VM.
 
-![]({{White-Hat-Security.github.io}}/https://raw.githubusercontent.com/White-Hat-Security/White-Hat-Security.github.io/master/images/config.png)
+![]({{White-Hat-Security.github.io}}https://raw.githubusercontent.com/White-Hat-Security/White-Hat-Security.github.io/master/images/config.png)
+
+![an image alt text]({{ site.baseurl }}/images/config.png "an image title")
 
 Test
