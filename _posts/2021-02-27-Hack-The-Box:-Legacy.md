@@ -33,7 +33,7 @@ We can see what shares are available and that blank username and passwords can b
 
 We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find smb_version.
 
-![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/third.png "an image title")
+![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fourth.png "an image title")
 
 Let's select it and see it's options.
 
