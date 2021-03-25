@@ -42,11 +42,9 @@ Looks like we just need to set the remote host (RHOST) and run it.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fith.png "an image title")
 
-After running it we still don't get the SMB version, 
+After running it we still don't get the SMB version, but we do get the OS version: Windows XP SP3 and we can use this to locate an exploit for the machine.
+
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/six.png "an image title")
-
-
-but we do get the OS version: Windows XP SP3 and we can use this to locate an exploit for the machine.
 
 Searching for Windows XP SP3 exploit shows that the machine might be vulnerable to MS08-067.
 
