@@ -15,8 +15,7 @@ For all of these walkthroughs, I used [pimpmykali](https://github.com/Dewalt-arc
 
 Let's fire up an nmap scan and see what we have to work with.
 
-```javascript
-/* Some pointless Javascript */
+```
 sudo nmap -T4 -A -p- 10.10.10.4
 ```
 
