@@ -34,7 +34,7 @@ We still don't have the version, so let's fire up metasploit and see if we can g
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fourth.png "an image title")
 
-Let's select it and see it's options.
+Let's select it and see the options.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fith.png "an image title")
 
@@ -43,8 +43,8 @@ Looks like we just need to set the remote host (RHOST) and run it.
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fith.png "an image title")
 
 After running it we still don't get the SMB version, 
-
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/six.png "an image title")
+
 
 but we do get the OS version: Windows XP SP3 and we can use this to locate an exploit for the machine.
 
