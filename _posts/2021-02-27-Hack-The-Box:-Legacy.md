@@ -52,7 +52,7 @@ If we search for ms08_067 in metasploit we can see that it already has a built i
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/nineth.png "an image title")
 
-Let's select it and see what option are availalbe.
+Let's select it and see what option are available.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/tenth.png "an image title")
 
