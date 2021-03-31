@@ -37,4 +37,4 @@ If we run the exploit we get a shell!
 
 ![]({{ site.baseurl }}/images/HTB-Lame-Screenshots/connection.png "an image title")
 
-We have successfuly rooted this machine! Thanks for reading!
+We have successfully rooted this machine! Thanks for reading!
