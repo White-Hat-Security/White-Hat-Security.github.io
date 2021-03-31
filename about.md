@@ -5,4 +5,4 @@ permalink: /about/
 published: true
 ---
 
-I am an aspiring pentester and this little blog will be where I post some ctf walkthroughs and other cybersecurity related stuff.
+I am an aspiring pentester and this little blog will be where I post ctf walkthroughs and other cybersecurity related posts.
