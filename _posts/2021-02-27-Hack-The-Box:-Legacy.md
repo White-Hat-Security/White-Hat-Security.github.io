@@ -25,7 +25,7 @@ Let's do some enumeration of SMB with enum4linux with the **-n** switch and see 
 
 We can see what shares are available and that a blank username and password can be used to authentic to SMB.  
 
-We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find **smb_version** aux module.
+We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find the **smb_version** aux module.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fourth.png "an image title")
 
@@ -41,7 +41,7 @@ After running it we still don't get the SMB version, but we do get the OS versio
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/six.png "an image title")
 
-Searching for Windows XP SP3 exploit shows that the machine might be vulnerable to MS08-067.
+Doing a web search for Windows XP SP3 exploit shows that the machine might be vulnerable to **MS08-067**.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/eith.png "an image title")
 
