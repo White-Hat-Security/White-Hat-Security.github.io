@@ -19,7 +19,7 @@ Let's fire up an nmap scan and see what we have to work with.
 Looks like ports 139, 445, and 3389 are open. Let's go after SMB first. 
 (If you need a cheat sheet for which services are running on which port, this [list](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) from wikipedia is quite good.)
 
-Let's do some enumeration of SMB with enum4linux with the -n switch and see what we get.
+Let's do some enumeration of SMB with enum4linux with the **-n** switch and see what we get.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/third.png "an image title")
 
