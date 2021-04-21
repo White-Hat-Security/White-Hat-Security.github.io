@@ -7,7 +7,11 @@ Box: **Blue**
 
 IP: **10.10.10.40**
 
-Let's see what services are running on the machine.
+Let's try using **rustscan** and see what ports are open.
+
+![]({{ site.baseurl }}/images/HTB-Blue-Screenshots/rustscan.png "an image title")
+
+Let's use nmap and see what services are running on the machine.
 
 ![]({{ site.baseurl }}/images/HTB-Blue-Screenshots/nmap.png "an image title")
 
