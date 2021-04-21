@@ -45,7 +45,7 @@ Doing a web search for Windows XP SP3 exploit shows that the machine might be vu
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/eith.png "an image title")
 
-If we search for ms08_067 in metasploit we can see that it already has a built in module. 
+If we search for **ms08_067** in metasploit we can see that it already has a built in module. 
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/nineth.png "an image title")
 
