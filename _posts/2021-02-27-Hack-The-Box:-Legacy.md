@@ -25,7 +25,7 @@ Let's do some enumeration of SMB with enum4linux with the **-n** switch and see 
 
 We can see what shares are available and that a blank username and password can be used to authentic to SMB.  
 
-We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find smb_version.
+We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find **smb_version** aux module.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/fourth.png "an image title")
 
