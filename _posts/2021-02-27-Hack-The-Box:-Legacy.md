@@ -23,7 +23,7 @@ Let's do some enumeration of SMB with enum4linux with the **-n** switch and see 
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/third.png "an image title")
 
-We can see what shares are available and that blank username and passwords can be used to authentic to SMB.  
+We can see what shares are available and that a blank username and password can be used to authentic to SMB.  
 
 We still don't have the version, so let's fire up metasploit and see if we can get it. If we search metasploit for a SMB scanner we find smb_version.
 
