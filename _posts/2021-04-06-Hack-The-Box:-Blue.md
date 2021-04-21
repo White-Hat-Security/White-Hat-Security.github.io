@@ -11,7 +11,7 @@ Let's try using **rustscan** and see what ports are open.
 
 ![]({{ site.baseurl }}/images/HTB-Blue-Screenshots/rustscan.png "an image title")
 
-Let's use nmap and see what services are running on the machine.
+Let's use nmap and see what services are running on ports 135, 139, 445.
 
 ![]({{ site.baseurl }}/images/HTB-Blue-Screenshots/nmap.png "an image title")
 
