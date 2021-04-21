@@ -23,7 +23,7 @@ Open up the site.
 
 And we can see that this exploit effects Samba version 3.0.20 through 3.0.25rc3.
 
-The nice thing about Rapid7 that they can have the exploit location for metasploit typed out for you.
+The nice thing about Rapid7, is they can have the exploit location for metasploit already typed out for you.
 
 ![]({{ site.baseurl }}/images/HTB-Lame-Screenshots/possible exploit.png "an image title")
 
