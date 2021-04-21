@@ -55,7 +55,7 @@ Let's select it and see what option are available.
 
 Look's like all we need to set is the remote host at 10.10.10.4.
 
-If we run the exploit we get a meterpreter session!
+If we run the exploit, we get a shell.
 
 ![]({{ site.baseurl }}/images/HTB-Legacy-Screenshots/twelth.png "an image title")
 
