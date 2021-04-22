@@ -7,7 +7,7 @@ Box: **Blue**
 
 IP: **10.10.10.40**
 
-Let's try using **rustscan** and see what ports are open.
+Let's try using **[rustscan](https://github.com/RustScan/RustScan#-full-installation-guide)** and see what ports are open.
 
 ![]({{ site.baseurl }}/images/HTB-Blue-Screenshots/rustscan.png "an image title")
 
