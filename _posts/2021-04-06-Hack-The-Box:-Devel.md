@@ -11,7 +11,7 @@ Let's fire off a rustscan and see what ports are open on the box.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/rustscan.png "an image title")
 
-Looks like ports 21 (FTP) and 80 (HTTP) are open. Let's go to the webpage and see if there is anything on it.
+Looks like ports 21 (FTP) and 80 (HTTP) are open. Let's go to the web page and see if there is anything on it.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/website-visit.png "an image title")
 
@@ -23,11 +23,11 @@ The let's scan the open ports with nmap and see if we can get the service versio
 
 We can see that the ISS version is 7.5. Make a note of that. 
 
-Since the box is running http let's run a directory scanning agains it using DirBuster.
+Since the box is running HTTP let's run a directory scanning against it using DirBuster.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/dirbuster-settings.png "an image title")
 
-Since it's IIS server, use the file expentsion: asm, asmx, asp, and aspx.
+Since it's IIS server, use the file extension: asm, asmx, asp, and aspx.
 
 While that's running in the background let's see if we can connect over ftp using username **anonymous** and password of **anonymous**.
 
@@ -57,7 +57,7 @@ Next let's ftp back into the target and upload the file.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/put-the-code.png "an image title")
 
-After that let's run metasploit and run the handler module to be able to revice back the connectnio from the payload we just put onto the target. 
+After that let's run metasploit and run the handler module to be able to revice back the connection from the payload we just put onto the target. 
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/meta-exploit handler.png "an image title")
 
@@ -73,7 +73,7 @@ Next let's go to the webpage to run the code. For me it was **10.10.10.5/shell.a
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/aspx-white-screen.png "an image title")
 
-Run the metasploit listern and you should a shell.
+Run the metasploit listener and you should a shell.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/got-shell.png "an image title")
 
@@ -89,7 +89,7 @@ If we look at the options we see that we only need to set the session number.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/suggester-opttions.png "an image title")
 
-We run the sugester and see a list fo exploits that metasploit thinks it can use against the target.
+We run the suggester and see a list fo exploits that metasploit thinks it can use against the target.
 
 Let's try the first one on the list: **ms10_015**
 
@@ -101,7 +101,7 @@ Let's select the exploit and see what options we need to configure.
 
 Looks like just the session id and our IP address.
 
-We run the exploit, get a shell, and if we run the command **getuid** we see that we have sucuesffuly rooted this machine.
+We run the exploit, get a shell, and if we run the command **getuid** we see that we have successfully rooted this machine.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/no-sessions.png "an image title")
 
