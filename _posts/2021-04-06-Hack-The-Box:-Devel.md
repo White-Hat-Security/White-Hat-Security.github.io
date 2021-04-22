@@ -39,4 +39,70 @@ I uploaded a file called puppy.jpeg and if we go to 10.10.10.5/puppy.jpeg we can
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/puppy.png "an image title")
 
-Knowing all of this, we need to create a reverse shell using msfvenom and get a reverse shell. 
+It looks like we should be able to create a payload in msfvenom and execute on the IIS server.
+
+This msfvenom cheat sheet should help us configure the right kind of payload. 
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/msfvenom-website.png "an image title")
+
+Let's use the ASPX one (not the asp as shown).
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/msfvenom-site-payload.png "an image title")
+
+Copy and paste the command in the terminal and add your IP and the port you want to listen on and hit enter.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/msfvenom-command.png "an image title")
+
+Next let's ftp back into the target and upload the file.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/put-the-code.png "an image title")
+
+After that let's run metasploit and run the handler module to be able to revice back the connectnio from the payload we just put onto the target. 
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/meta-exploit handler.png "an image title")
+
+Let's see what options we get for the handler.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/meta-options.png "an image title")
+
+Let's set the IP and ports and also let's set the payload to be **meterpreter_reverse_tcp**
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/set-correct-payload.png "an image title")
+
+Next let's go to the webpage to run the code. For me it was **10.10.10.5/shell.aspx**.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/aspx-white-screen.png "an image title")
+
+Run the metasploit listern and you should a shell.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/got-shell.png "an image title")
+
+If we run **getuid** we can see that we are not root and if we try running the **getsystem** command it doesn't work. 
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/not-root "an image title")
+
+Let's use the exploit suggester in metasploit and see what exploits it finds.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/search-suggester.png "an image title")
+
+If we look at the options we see that we only need to set the session number.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/suggester-opttions.png "an image title")
+
+We run the sugester and see a list fo exploits that metasploit thinks it can use against the target.
+
+Let's try the first one on the list: **ms10_015**
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/exploit-suggester-results.png "an image title")
+
+Let's select the exploit and see what options we need to configure.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/new-expl oit-settings.png "an image title")
+
+Looks like just the session id and our IP address.
+
+We run the exploit, get a shell, and if we run the command **getuid** we see that we have sucuesffuly rooted this machine.
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/no-sessions.png "an image title")
+
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/exploit-to-get-root.png "an image title")
