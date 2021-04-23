@@ -23,7 +23,7 @@ The let's scan the open ports with nmap and see if we can get the service versio
 
 We can see that the ISS version is 7.5. Make a note of that. 
 
-Since the box is running HTTP let's run a directory scanning against it using DirBuster.
+Since the box is running HTTP let's run a directory scanning against it using DirBuster (spoilers we don't find anything).
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/dirbuster-settings.png "an image title")
 
