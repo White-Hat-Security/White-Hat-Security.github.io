@@ -57,7 +57,7 @@ Next let's ftp back into the target and upload the file.
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/put-the-code.png "an image title")
 
-After that let's run metasploit and run the handler module to be able to revice back the connection from the payload we just put onto the target. 
+After that let's run metasploit and run the handler module to be able to recieve back the connection from the payload we just put onto the target. 
 
 ![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/meta-exploit handler.png "an image title")
 
