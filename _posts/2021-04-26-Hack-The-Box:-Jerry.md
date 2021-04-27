@@ -57,7 +57,28 @@ Back in burp suite, right click a GET request and then click Send to Repeater.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/burp-send-to-reapeater.png "an image title")
 
-Click on the Intruder tab and then hit the Clear button on the right and then highlight the base64 text and hit the Add button. 
+Click on the Intruder tab and then hit the Clear button on the right and then highlight the base64 text and hit the Add button. Next click on the Payloads tab.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/intruder-options.png "an image title")
 
+Copy and paste the encoded credentials into the Paylaod Options sections. Scroll down to the bottom of the tab and uncheck URL encode. 
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/paylaod.png "an image title")
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/uncheck-url-encoding.png "an image title")
+
+Next go back to the Target tab and hit Start Attack on the right. You will be brought to the results tab and you should look for a Status code of 200, which means the credentials authenticated.
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/correct-password.png "an image title")
+
+Next go back into the webpage and hit App Manager and enter in the username tomcat and the password of s3cret and you should be brought to the Server Status page.
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/access-restricted.png "an image title")
+
+Scroll down and you will see a section that will let you upload WAR files and this is how will we get a reverse shell onto the machine. 
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/upload-page.png "an image title")
+
+We will then use msfvenom to create the reverse shell.
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/war-payload.png "an image title")
