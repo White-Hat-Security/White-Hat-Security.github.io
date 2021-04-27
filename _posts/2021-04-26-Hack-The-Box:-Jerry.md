@@ -86,3 +86,7 @@ We will then use msfvenom to create the reverse shell.
 After loading up the file you should see it on the left at the bottom of the Path column.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/uploaded-webshell.png "an image title")
+
+Run the command nc -nvlp 4444 and you should get a conection and be root!
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/nc-connection.png "an image title")
