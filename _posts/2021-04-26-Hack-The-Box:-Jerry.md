@@ -1,6 +1,11 @@
 ---
 published: false
 ---
-## A New Post
+**HackTheBox**
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Box: **Devel**
+
+IP: **10.10.10.95**
+
+
+
