@@ -56,3 +56,6 @@ Next I am going to go to a base64 website converter and paste in the formatted c
 Back in burp suite, right click a GET request and then click Send to Repeater. 
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/burp-send-to-reapeater.png "an image title")
+
+Click on the Intruder tab and then hit the Clear button on the right and then highlight the base64 text and hit the Add button. 
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/intruder-options.png "an image title")
