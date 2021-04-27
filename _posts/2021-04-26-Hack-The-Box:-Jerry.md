@@ -47,3 +47,12 @@ Copy and paste the credentials into a word doc and then use the find and replace
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/paste-default-creds.png "an image title")
 
+Next I am going to go to a base64 website converter and paste in the formatted credentials, and then encode them.
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/base64-site-url.png "an image title")
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/base64-site.png "an image title")
+
+Back in burp suite, right click a GET request and then click Send to Repeater. 
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/burp-send-to-reapeater.png "an image title")
