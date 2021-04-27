@@ -82,3 +82,7 @@ Scroll down and you will see a section that will let you upload WAR files and th
 We will then use msfvenom to create the reverse shell.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/war-payload.png "an image title")
+
+After loading up the file you should see it on the left at the bottom of the Path column.
+
+![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/uploaded-webshell.png "an image title")
