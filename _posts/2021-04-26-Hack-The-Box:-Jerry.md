@@ -3,7 +3,7 @@ published: false
 ---
 **HackTheBox**
 
-Box: **Devel**
+Box: **Jerry**
 
 IP: **10.10.10.95**
 
@@ -27,7 +27,7 @@ In BurpSuite, under the proxy tab, under HTTP history tab, we should see the get
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/login-screen.png "an image title")
 
-Highlight the base64 string, righ-click and hit send to Decoder.
+Highlight the base64 string, right-click and hit send to Decoder.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/right-click-send.png "an image title")
 
@@ -39,7 +39,7 @@ You should then see the decoded text appear at the bottom of the screen.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/base64-results.png "an image title")
 
-Since the web server is running Tomcat, let's search on the interent for the default credneitlas and try using them agains the site. Thi github page has them.
+Since the web server is running Tomcat, let's search on the internet for the default credentials and try using them against the site. This [github page](https://github.com/netbiosX/Default-Credentials/blob/master/Apache-Tomcat-Default-Passwords.mdown) has them.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/tomcat-default-creds.png "an image title")
 
@@ -61,7 +61,7 @@ Click on the Intruder tab and then hit the Clear button on the right and then hi
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/intruder-options.png "an image title")
 
-Copy and paste the encoded credentials into the Paylaod Options sections. Scroll down to the bottom of the tab and uncheck URL encode. 
+Copy and paste the encoded credentials into the Payload Options sections. Scroll down to the bottom of the tab and uncheck URL encode. 
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/paylaod.png "an image title")
 
@@ -87,6 +87,6 @@ After loading up the file you should see it on the left at the bottom of the Pat
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/uploaded-webshell.png "an image title")
 
-Run the command nc -nvlp 4444 and you should get a conection and be root!
+Run the command nc -nvlp 4444 and you should get a connection and be root!
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/nc-connection.png "an image title")
