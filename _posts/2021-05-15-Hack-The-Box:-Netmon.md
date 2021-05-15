@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 **HackTheBox**
 
@@ -90,7 +90,3 @@ A username and password will then created on the target.
 If we then use psexec.py (from [impacket](https://github.com/SecureAuthCorp/impacket)) and our newly created account, we can access the machine as root!
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/final.png "an image title")
-
-
-
-
