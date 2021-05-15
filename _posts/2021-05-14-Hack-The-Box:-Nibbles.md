@@ -14,7 +14,7 @@ Let's start fire off an nmap scan and see what we get. **sudo nmap -A -p- -T4 10
 
 Look's like SSH and HTTP are running.
 
-Let's navigate to the website, and clikc on the protepries button and see if there is any hidden code on it. 
+Let's navigate to the website, and click on the properties button and see if there is any hidden code on it. 
 
 ![]({{ site.baseurl }}/images/HTB-Nibbles-Screenshots/initial-scan.png "an image title")
 
@@ -40,7 +40,7 @@ We get a hit with the path being **nibbleblog/admin.php**.
 
 ![]({{ site.baseurl }}/images/HTB-Nibbles-Screenshots/dirbuster-results.png "an image title")
 
-Let's naviage to the page and see what we get.
+Let's navigate to the page and see what we get.
 
 ![]({{ site.baseurl }}/images/HTB-Nibbles-Screenshots/admin-panel.png "an image title")
 
@@ -78,6 +78,6 @@ Make sure to make the file executable with **chmod +x monitor.sh**.
 
 ![]({{ site.baseurl }}/images/HTB-Nibbles-Screenshots/file-permi.png "an image title")
 
-If everythgin works correctly you should see a root shell!
+If everything works correctly you should see a root shell!
 
 ![]({{ site.baseurl }}/images/HTB-Nibbles-Screenshots/root.png "an image title")
