@@ -17,7 +17,7 @@ Let's navigate to the webpage and see what we get.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/web-page.png "an image title")
 
-If we click around we see a screen that chnages and on it we see a path to **/uploads/phpbash.php**.
+If we click around we see a screen that changes and on it we see a path to **/uploads/phpbash.php**.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/uploads-folder-location.png "an image title")
 
@@ -29,7 +29,7 @@ Next, let's fire up DirBuster and see if we can find some more directories.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/dirbuster.png "an image title")
 
-A direcotry that looks interesting is **/dev/phpbash.php**.
+A directory that looks interesting is **/dev/phpbash.php**.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/location.png "an image title")
 
@@ -61,7 +61,7 @@ Let's clone the repo.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/git-reverse-shell.png "an image title")
 
-Next, let's get into the file and chnaged the **ip** and **port** to talk back to our machine.
+Next, let's get into the file and changed the **ip** and **port** to talk back to our machine.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/stuff-to-change.png "an image title")
 
@@ -73,7 +73,7 @@ And then from the webshell, lets use wget and grab the file from our host machin
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/grab-the-shell.png "an image title")
 
-In order to execute the reverse shell, we need to navigaet to the path it is at. **10.10.10.68/uploads/php-reverse-shell.php**
+In order to execute the reverse shell, we need to navigate to the path it is at. **10.10.10.68/uploads/php-reverse-shell.php**
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/site-execute.png "an image title")
 
@@ -97,7 +97,7 @@ Let's try switching into the scriptmanager account using **sudo su scriptmanager
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/fail-su.png "an image title")
 
-That didn't work, lets try using **sudo -u scriptmanager /bin/bash**. The -u flag will run the command as the speicfied user. In this case it will tell linux to open a bash shell as scriptmanager.
+That didn't work, lets try using **sudo -u scriptmanager /bin/bash**. The -u flag will run the command as the specified user. In this case it will tell Linux to open a bash shell as scriptmanager.
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/run-as-user.png "an image title")
 
@@ -128,8 +128,3 @@ Next, spin up a python web server to host the reversre shell to get it onto the 
 If everything works correctly, you should get a connection and then run the command **python -c 'import pty; pty.spawn("/bin/sh")'** to get a bash shell as root!
 
 ![]({{ site.baseurl }}/images/HTB-Bashed-Screenshots/root.png "an image title")
-
-
-
-
-
