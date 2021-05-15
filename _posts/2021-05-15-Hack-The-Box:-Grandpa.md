@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 **HackTheBox**
@@ -65,11 +65,3 @@ Let's see the exploit options.
 Run the exploit and we will get NT Authority\System.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/exploit-works.png "an image title")
-
-
-
-
-
-
-
-
