@@ -11,11 +11,11 @@ Let's start an nmap scan and see what ports are open on the box.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/initial-scan.png "an image title")
 
-We can see that port 8080 (HTTP) is open and is running a **Tomcat 7.0.88** web server. Let's go and see what the webpage looks like. 
+We can see that port 8080 (HTTP) is open and is running a **Tomcat 7.0.88** web server. Let's go and see what the web page looks like. 
 
-![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/look-at-webpage.png "an image title")
+![]({{ site.baseurl }}/images/HTB-Devel-Screenshots/look-at-web page.png "an image title")
 
-We see the version of tomcat running again. If we click on the Manager App button on the right we are promptedt with a login window.
+We see the version of tomcat running again. If we click on the Manager App button on the right we are prompted with a login window.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/login-screen.png "an image title")
 
@@ -71,7 +71,7 @@ Next go back to the Target tab and hit Start Attack on the right. You will be br
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/correct-password.png "an image title")
 
-Next go back into the webpage and hit App Manager and enter in the username tomcat and the password of s3cret and you should be brought to the Server Status page.
+Next go back into the web page and hit App Manager and enter in the username tomcat and the password of s3cret and you should be brought to the Server Status page.
 
 ![]({{ site.baseurl }}/images/HTB-Jerry-Screenshots/access-restricted.png "an image title")
 
