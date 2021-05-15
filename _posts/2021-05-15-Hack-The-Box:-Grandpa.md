@@ -18,7 +18,7 @@ Looks like HTTP is open, so lets navigate to the machine and see if we see anyth
 
 Doesn't look like anything. 
 
-Let's run dirbuster and and see if there are any hidden directories. 
+Let's run dirbuster and see if there are any hidden directories. 
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/dirbuster.png "an image title")
 
@@ -32,7 +32,7 @@ Let's see what the options are in metasploit.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/exploit-options.png "an image title")
 
-Run the exolpit and we get a shell!
+Run the exploit and we get a shell!
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/exploit-success.png "an image title")
 
@@ -44,11 +44,11 @@ Let's see what processes are running on the machine using **ps**.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/services-migrate.png "an image title")
 
-We see three of them are running as NT Authority\Network Service, let;s try and migrate our current session to get more permissions on the system.
+We see three of them are running as NT Authority\Network Service, let's try and migrate our current session to get more permissions on the system.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/get-system.png "an image title")
 
-Nex, let's background the sessions and use the exploit_suggester to get NT Authority\System.
+Next, let's background the sessions and use the exploit_suggester to get NT Authority\System.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/priv-suggester.png "an image title")
 
