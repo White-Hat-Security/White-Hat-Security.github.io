@@ -63,19 +63,19 @@ In the oldest file, we find the username and password not hashed.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/found-creds.png "an image title")
 
-If we try the creds ew found it doesnt work, but if we increment the last number by 1, the creds will work!
+If we try the creds we find it doesn't work, but if we increment the last number by 1, the creds will work!
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/password-incre.png "an image title")
 
-We succesffuly get access to the software.
+We successfully get access to the software.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/login-success.png "an image title")
 
-Get the version of the PRTG software and we see that it is vulenrable to a remote code authentication exploit. 
+Get the version of the PRTG software and we see that it is vulnerable to a remote code authentication exploit. 
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/download-exploit.png "an image title")
 
-In order to run the exploit we will need our auth cookies. We can get those in firefox by right-clicking and slecting inspect elemt and then going to the storage tab and clicking on the OCTOPUS cookie. Copy it.
+In order to run the exploit we will need our auth cookies. We can get those in Firefox by right-clicking and selecting inspect element and then going to the storage tab and clicking on the OCTOPUS cookie. Copy it.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/auth-cookie.png "an image title")
 
@@ -83,7 +83,7 @@ Download the exploit and set it up. (I had to fix the script with this sed comma
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/prtg-exploit.png "an image title")
 
-A username and password will then created on the target.
+An username and password will then be created on the target.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/exploit-success.png "an image title")
 
