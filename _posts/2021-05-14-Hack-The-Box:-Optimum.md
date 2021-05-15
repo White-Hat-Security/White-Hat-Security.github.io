@@ -42,11 +42,9 @@ Select suggester, the only thing that needs to be set is the session number.
 
 ![]({{ site.baseurl }}/images/HTB-Optimum-Screenshots/suggester-options.png "an image title")
 
-get pic of suggester options and executing against it.
+We will use the ms16-032 exploit.
 
+![]({{ site.baseurl }}/images/HTB-Optimum-Screenshots/metasploit-search.png "an image title")
 
-maybe have other stuff as different post
-
-
-
+zzzzz
 
