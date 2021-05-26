@@ -8,7 +8,7 @@ Box: **Grandpa**
 
 IP: **10.10.10.14**
 
-Let run a nmap scan and see what is running on the target.
+Let's run a nmap scan and see what is running on the target.
 
 ![]({{ site.baseurl }}/images/HTB-Grandpa-Screenshots/inital-scan.png "an image title")
 
