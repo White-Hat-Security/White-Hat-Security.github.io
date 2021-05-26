@@ -51,7 +51,7 @@ We can then see three dat files, let's download them and look at them.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/ftp-download.png "an image title")
 
-Open the latest file in any text editor and if we search for password we get an hashed password.
+Open the latest file in any text editor and if we search 'password' we get a hashed password.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/encrypted-password.png "an image title")
 
@@ -59,7 +59,7 @@ Same in the older file.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/also-encrypt.png "an image title")
 
-In the oldest file, we find the username and password not hashed.
+In the oldest file, we find that the username and password are not hashed.
 
 ![]({{ site.baseurl }}/images/HTB-Netmon-Screenshots/found-creds.png "an image title")
 
